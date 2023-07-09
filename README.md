@@ -1,2 +1,0 @@
-# papers-aggregator
-MLH workshop
