@@ -1,26 +1,22 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/GHW/pkg"
-	"github.com/GHW/utils"
 )
 
 func main() {
-	url := "https://paperswithcode.com/?page=2"
+	url := "https://paperswithcode.com/?page="
 	regex := `<h1><a href=.([^"']*).>([^<]*)</a></h1>`
 
-	papers, err := pkg.GetPapersFromSource(url, regex)
+	downloader := pkg.New()
+	downloader.SetSource(url).
+		SetRegex(regex).
+		SetLimit(12).
+		DownloadPapers().
+		Save()
 
-	if err != nil {
-		panic(err)
-	}
+	// fmt.Println(
+	// 	utils.PrettyPrintStruct(downloader),
+	// )
 
-	fmt.Println(utils.PrettyPrintStruct(papers))
-	fmt.Printf("You got %d results \n", len(papers))
 }
-
-// Aggregator of papers from different sources.
-
-// Common interface for all sources.
