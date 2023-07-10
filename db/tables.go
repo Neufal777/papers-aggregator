@@ -26,7 +26,8 @@ func CreateDatabaseTable() {
 	query := `CREATE TABLE IF NOT EXISTS papers (
 		id INT AUTO_INCREMENT PRIMARY KEY,
 		url VARCHAR(200) NOT NULL,
-		title VARCHAR(200) NOT NULL
+		title VARCHAR(200) NOT NULL,
+		github VARCHAR(200) NOT NULL
 	);`
 
 	_, err = db.Exec(query)

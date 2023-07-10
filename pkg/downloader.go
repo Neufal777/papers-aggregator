@@ -68,8 +68,9 @@ func (d *Downloader) DownloadPapers() *Downloader {
 
 	for _, match := range matches {
 		d.Papers = append(d.Papers, Paper{
-			URL:   "https://paperswithcode.com" + match[1],
-			Title: match[2],
+			URL:    "https://paperswithcode.com" + match[1],
+			Title:  match[2],
+			Github: match[3],
 		})
 	}
 
@@ -110,7 +111,7 @@ func (d *Downloader) Save() *Downloader {
 		}
 
 		if count == 0 {
-			query := fmt.Sprintf("INSERT INTO papers (url, title) VALUES ('%s', '%s')", paper.URL, paper.Title)
+			query := fmt.Sprintf("INSERT INTO papers (url, title, github) VALUES ('%s', '%s','%s')", paper.URL, paper.Title, paper.Github)
 
 			_, err = db.Exec(query)
 			if err != nil {

@@ -1,9 +1,10 @@
 package pkg
 
 type Paper struct {
-	URL   string `json:"url"`   // URL to the paper
-	Title string `json:"title"` // Title of the paper
-	// Github string `json:"github"` // Github repo of the paper
+	ID     int    `json:"id"`     // ID of the paper
+	URL    string `json:"url"`    // URL to the paper
+	Title  string `json:"title"`  // Title of the paper
+	Github string `json:"github"` // Github repo of the paper
 }
 
 // func GetPapersFromSource(source string, regex string) ([]Paper, error) {
