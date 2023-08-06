@@ -1,4 +1,4 @@
-### Papers API - MLH workshop
+### Papers API - MLH workshop on 6th August
 
 **example:**
 ```json
