@@ -1,4 +1,6 @@
-### Papers API - MLH workshop (adding collaborations example)
+### Papers API - MLH workshop on 6th August
+#### Papers API - MLH workshop (adding collaborations example)
+
 
 **example:**
 ```json
