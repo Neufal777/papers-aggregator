@@ -1,5 +1,7 @@
-### Papers API - MLH workshop on 6th August
-#### Papers API - MLH workshop (adding collaborations example)
+### Papers API - GHW Data Week 
+
+ ##### A workshop on getting started with open source contributions
+
 
 
 **example:**
