@@ -1,6 +1,6 @@
 ### Papers API - GHW Data Week 
 
- ##### A workshop on getting started with open source contributions
+ - ##### Practice repo for the workshop on 6th August - Getting Started with Open Source Contributions
 
 
 
